@@ -32275,6 +32275,21 @@
                     "description": "modb active modbs",
                     "type": "integer"
                 },
+                "change_notice_exclude_types": {
+                    "default": [
+                        "cdr",
+                        "ledger",
+                        "audit_log",
+                        "login_attempt",
+                        "pivot_debug",
+                        "notify_smtp_log"
+                    ],
+                    "description": "modb change_notice_exclude_types",
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
                 "routines": {
                     "default": [],
                     "description": "modb routines",
